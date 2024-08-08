@@ -6,7 +6,7 @@ function MeetMyCreator() {
                need :)</p>
             <div className={"grid grid-cols-[1fr,4fr] gap-x-4 items-center"}>
                 <div className={"w-12 h-12 rounded-full overflow-hidden"}>
-                    <img src={"/creator/rupinder.jpg"} alt={"creator image"}/>
+                    <img src={"./creator/rupinder.jpg"} alt={"creator image"}/>
                 </div>
                 <div>
                     <p className={"font-bold"}>Rupinder Pal Singh</p>

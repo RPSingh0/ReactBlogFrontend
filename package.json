@@ -1,5 +1,5 @@
 {
-  "homepage": "http://RPSingh0.github.io/ReactBlogFrontend",
+  "homepage": "https://RPSingh0.github.io/ReactBlogFrontend/",
   "name": "blog-application",
   "private": true,
   "version": "0.0.0",
@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
-    "@supabase/supabase-js": "^2.39.7",
     "@tailwindcss/typography": "^0.5.10",
     "@tanstack/react-query": "^5.25.0",
     "@tanstack/react-query-devtools": "^5.25.0",
@@ -23,7 +22,6 @@
     "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.0",
-    "react-hot-toast": "^2.4.1",
     "react-icons": "^5.0.1",
     "react-markdown": "^9.0.1",
     "react-redux": "^9.1.0",

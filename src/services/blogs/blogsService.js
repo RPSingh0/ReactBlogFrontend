@@ -1,4 +1,4 @@
-const BASE_URL = 'http://18.212.208.63:3000/api/v1';
+const BASE_URL = 'https://4skie55dmm6zsdrbmxa6ozep240kkerx.lambda-url.us-east-1.on.aws/api/v1';
 
 export async function getAllBlogsService() {
     let blogs = await fetch(`${BASE_URL}/blog/all?fields=blogId,title,createdOn,tags`, {
@@ -75,5 +75,5 @@ export function parseAllBlogs(data) {
 }
 
 export function parseSingleBlog(data) {
-    return data.data.blog[0];
+    return data.data.blogs[0];
 }
