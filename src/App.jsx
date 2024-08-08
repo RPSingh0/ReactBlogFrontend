@@ -1,5 +1,5 @@
 import AppLayout from "./components/Layout/AppLayout.jsx";
-import {HashRouter, Navigate, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import Dashboard from "./components/UI/Dashboard/Dashboard.jsx";
 import OurStory from "./components/UI/OurStory/OurStory.jsx";
 import PageNotFound from "./components/UI/PageNotFound/PageNotFound.jsx";
@@ -21,7 +21,7 @@ export default function App() {
     return (
         <QueryClientProvider client={queryClient}>
             <ReactQueryDevtools initialIsOpen={false}/>
-            <HashRouter>
+            <BrowserRouter>
                 <Routes>
                     <Route element={<AppLayout/>}>
                         <Route index element={<Navigate replace={true} to={"dashboard"}/>}/>
@@ -33,7 +33,7 @@ export default function App() {
                         <Route path={"*"} element={<PageNotFound/>}/>
                     </Route>
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
         </QueryClientProvider>
     );
 }
