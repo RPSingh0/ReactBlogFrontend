@@ -19,21 +19,21 @@ const queryClient = new QueryClient({
 
 export default function App() {
     return (
-            <QueryClientProvider client={queryClient}>
-                <ReactQueryDevtools initialIsOpen={false}/>
-                <BrowserRouter>
-                    <Routes>
-                        <Route element={<AppLayout/>}>
-                            <Route index element={<Navigate replace={true} to={"dashboard"}/>}/>
-                            <Route path={"dashboard"} element={<Dashboard/>}/>
-                            <Route path={"blog/:blogId"} element={<Blog/>}/>
-                            <Route path={"topics/:topic"} element={<TopicBlogs/>}/>
-                            <Route path={"favourites"} element={<Favourites/>}/>
-                            <Route path={"our-story"} element={<OurStory/>}/>
-                            <Route path={"*"} element={<PageNotFound/>}/>
-                        </Route>
-                    </Routes>
-                </BrowserRouter>
-            </QueryClientProvider>
+        <QueryClientProvider client={queryClient}>
+            <ReactQueryDevtools initialIsOpen={false}/>
+            <BrowserRouter>
+                <Routes>
+                    <Route element={<AppLayout/>}>
+                        <Route index element={<Navigate replace={true} to={"dashboard"}/>}/>
+                        <Route path={"dashboard"} element={<Dashboard/>}/>
+                        <Route path={"blog/:blogId"} element={<Blog/>}/>
+                        <Route path={"topics/:topic"} element={<TopicBlogs/>}/>
+                        <Route path={"favourites"} element={<Favourites/>}/>
+                        <Route path={"our-story"} element={<OurStory/>}/>
+                        <Route path={"*"} element={<PageNotFound/>}/>
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+        </QueryClientProvider>
     );
 }

@@ -17,7 +17,7 @@ function Blog() {
         <>
             {error ?
                 <div className={"w-full h-full flex flex-col gap-y-4 items-center justify-center"}>
-                    <img src={"/broken/broken.gif"} className={"h-16"} alt={"data not found icon"}/>
+                    <img src={"./broken/broken.gif"} className={"h-16"} alt={"data not found icon"}/>
                     <p className={"font-semibold text-slate-800"}>Data not found!</p>
                 </div> :
                 <div>
