@@ -41,9 +41,7 @@ npm install gh-pages --save-dev
 
 ```json
 {
-  ...
-  "homepage": "https://<github-user-name>.github.io/<repository-name>/",
-  ...
+  "homepage": "https://<github-user-name>.github.io/<repository-name>/"
 }
 ```
 
@@ -52,10 +50,8 @@ npm install gh-pages --save-dev
 
 ```json
 {
-  ...
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
-  ...
+  "deploy": "gh-pages -d dist"
 }
 ```
 
@@ -63,24 +59,15 @@ npm install gh-pages --save-dev
 
 ```json
 {
-  ...
-  "base": "/<repository-name>/",
-  ...
+  "base": "/<repository-name>/"
 }
 ```
 
-* One last change 😁, if you're using BrowserRouter with react-route, Github doesn't support that as of now, so go ahead
+* One last change 😁, if you're using BrowserRouter with react-route, GitHub doesn't support that as of now, so go ahead
   to your imports and change
 
 ```js
-import {
-
-...,
-HashRouter,
-...
-}
-from
-"react-router-dom";
+import {HashRouter} from "react-router-dom";
 ```
 
 * And use `HashRouter` in place of `BrowserRoute`
@@ -99,10 +86,10 @@ npm run deploy
 
 * This will do the following things
     * Build the project and put the built files under `dist` directory
-    * Reach out to github and create/update the build files under the branch `gh-pages`
+    * Reach out to GitHub and create/update the build files under the branch `gh-pages`
     * Once you see `Published` in your console, it's all done!
 
-### Now go to Github under the following path
+### Now go to GitHub under the following path
 
 * `github` -> `repository` -> `settings` -> `pages`
 * And ensure that `gh-pages` is selected as deploy under `Build and deployment` section and `source` is set
