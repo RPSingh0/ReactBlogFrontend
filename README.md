@@ -1,6 +1,6 @@
 # React-Blogs FrontEnd
 
-[Live View](http://react-blogs-r.s3-website-us-east-1.amazonaws.com)
+[Live View](https://rpsingh0.github.io/ReactBlogFrontend/)
 
 This project is created using ReactJS for the frontend development. It utilizes Redux for global state management, React
 Device Detect for rendering components based on devices, React Icons for icon display, React Markdown for rendering text
